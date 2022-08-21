@@ -17,6 +17,10 @@
 		5B91AA2E28B1BC6200539A5B /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B91AA0428B1BC6000539A5B /* MeetingView.swift */; };
 		5B91AA2F28B1BC6200539A5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B91AA0528B1BC6200539A5B /* Assets.xcassets */; };
 		5B91AA3028B1BC6200539A5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B91AA0528B1BC6200539A5B /* Assets.xcassets */; };
+		5B91AA4128B1C14D00539A5B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B91AA4028B1C14D00539A5B /* Theme.swift */; };
+		5B91AA4328B1C22100539A5B /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B91AA4228B1C22100539A5B /* DailyScrum.swift */; };
+		5B91AA4528B1C33500539A5B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B91AA4428B1C33500539A5B /* CardView.swift */; };
+		5B91AA4728B1C7E600539A5B /* TrailingIconLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B91AA4628B1C7E600539A5B /* TrailingIconLabelStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		5B91AA2328B1BC6200539A5B /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B91AA2728B1BC6200539A5B /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		5B91AA2928B1BC6200539A5B /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		5B91AA4028B1C14D00539A5B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		5B91AA4228B1C22100539A5B /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
+		5B91AA4428B1C33500539A5B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5B91AA4628B1C7E600539A5B /* TrailingIconLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailingIconLabelStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,8 @@
 			children = (
 				5B91AA0328B1BC6000539A5B /* ScrumdingerApp.swift */,
 				5B91AA0428B1BC6000539A5B /* MeetingView.swift */,
+				5B91AA4428B1C33500539A5B /* CardView.swift */,
+				5B91AA3F28B1C14200539A5B /* Models */,
 				5B91AA0528B1BC6200539A5B /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -139,6 +149,16 @@
 				5B91AA2928B1BC6200539A5B /* Tests_macOSLaunchTests.swift */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		5B91AA3F28B1C14200539A5B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B91AA4028B1C14D00539A5B /* Theme.swift */,
+				5B91AA4228B1C22100539A5B /* DailyScrum.swift */,
+				5B91AA4628B1C7E600539A5B /* TrailingIconLabelStyle.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +319,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B91AA4328B1C22100539A5B /* DailyScrum.swift in Sources */,
+				5B91AA4728B1C7E600539A5B /* TrailingIconLabelStyle.swift in Sources */,
+				5B91AA4128B1C14D00539A5B /* Theme.swift in Sources */,
 				5B91AA2D28B1BC6200539A5B /* MeetingView.swift in Sources */,
 				5B91AA2B28B1BC6200539A5B /* ScrumdingerApp.swift in Sources */,
+				5B91AA4528B1C33500539A5B /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
