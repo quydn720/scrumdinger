@@ -26,9 +26,11 @@ struct MeetingView: View {
                         .font(.caption)
                     Label("100", systemImage: "hourglass.tophalf.fill")
                 }
-                
-                
             }
+            // ignore reading system name of label icons
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel("Time remaining")
+            .accessibilityValue("10 minutes")
             
             Circle().strokeBorder(lineWidth: 24)
             
@@ -38,6 +40,8 @@ struct MeetingView: View {
                 Button(action: {}) {
                     Image(systemName: "forward.fill")
                 }
+                // VoiceOver will read the label, then the accessibility trait ("Button")
+                .accessibilityLabel("Next speaker")
             }
             
         }
